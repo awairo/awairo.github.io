@@ -1,3 +1,18 @@
+/* 滚动条 */
+body {
+  overflow-y: overlay;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ebcfcbb5;
+}
+
+/* 脚注 */
 .footer {
   background-image: url("../images/nnnoise4.svg") !important;
   background-repeat: initial;

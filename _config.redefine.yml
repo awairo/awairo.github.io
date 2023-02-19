@@ -2,7 +2,7 @@
 #  Your basic info
 # ---------------------------------------------------------------------------------------
 base_info:
-  title: Awairo Home # Site title
+  title: Awairo's Blog # Site title
   author: Xu song # Author name
   url: https://awairo.github.io # Site url
   # Logo image (You can use local image, image external link or don’t fill)

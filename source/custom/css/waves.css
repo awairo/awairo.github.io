@@ -18,49 +18,28 @@
 .parallax > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
-  fill: #f7f9febd;
+  fill: var(--background-color);
+  opacity: 0.74;
 }
 
 .parallax > use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
-  fill: #f7f9fe82;
+  fill: var(--background-color);
+  opacity: 0.51;
 }
 
 .parallax > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
-  fill: #f7f9fe36;
+  fill: var(--background-color);
+  opacity: 0.21;
 }
 
 .parallax > use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
-  fill: #ffffff;
-}
-
-[data-theme="dark"] .parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-  fill: #18171dc8;
-}
-
-[data-theme="dark"] .parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-  fill: #18171d80;
-}
-
-[data-theme="dark"] .parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-  fill: #18171d3e;
-}
-
-[data-theme="dark"] .parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-  fill: #18171d;
+  fill: var(--background-color);
 }
 
 @keyframes move-forever {
