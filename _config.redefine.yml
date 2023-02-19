@@ -203,9 +203,9 @@ comment:
   # See: https://github.com/gitalk/gitalk
   gitalk:
     github_id: awairo
-    repository: https://github.com/awairo/blog-comment
+    repository: blog-comment
     client_id: cd9278bc2caf6277e19c
-    client_secret: 283008ecf67ef4d2c34df464abb33af2af36e3c8
+    client_secret: cb45b5c0519904f50e5237b28711189e318fafb4
 
   # Twikoo
   # See: https://github.com/imaegoo/twikoo

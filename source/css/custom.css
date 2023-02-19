@@ -9,7 +9,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ebcfcbb5;
+  background-color: #ebcfcb96;
 }
 
 /* 脚注 */
@@ -23,7 +23,7 @@ body {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: -11px;
+  bottom: -9px;
   z-index: 5;
 }
 
