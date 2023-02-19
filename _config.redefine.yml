@@ -89,13 +89,9 @@ menu: #you can customize, i18n files are in the theme's languages folder. fa-reg
   # Status:
   #   path: https://status.evanluo.top/
   #   icon: fa-regular fa-chart-bar
-  # About:
-  #   icon: fa-regular fa-user
-  #   submenus:
-  #     Me: /about
-  #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-  #     Blog: https://ohevan.com
-  #     Friends: /friends
+  About:
+    path: /about
+    icon: fa-regular fa-user
   Links:
     path: /links
     icon: fa-regular fa-link
@@ -286,14 +282,12 @@ footer:
 # Custom html code
 # ---------------------------------------------------------------------------------------
 inject:
-  enable: false
+  enable: true
   head: # inject code into <head> tag
-    -
-    -
+    - <link rel="stylesheet" href="/custom/css/style.css">
+    - <link rel="stylesheet" href="/custom/css/waves.css">
   footer: # inject code into <footer> tag
-    -
-    -
-
+    - <script src="/custom/js/waves.js"></script>
 # ---------------------------------------------------------------------------------------
 # Redefine Theme version (Please dont modify it)
 # Please go to github to update the latest version frequently
