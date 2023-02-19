@@ -16,7 +16,7 @@ style:
   primary_color: "#005080"
 
   # Avatar (You can use local image or image external link)
-  avatar: /images/redefine-avatar.svg # avatar of the author
+  avatar: /images/avatar.jpg # avatar of the author
 
   # Favicon (You can use local image or image external link)
   favicon: /images/redefine-logo.svg # favicon of the site
@@ -67,13 +67,13 @@ style:
 # Social contact link
 # ---------------------------------------------------------------------------------------
 social_contact: # social contact icons in the first screen, you can add more by using fontawesome icon names
-  enable: false
+  enable: true
   links:
-    github: # your GitHub URL
-    instagram: # your Instagram URL
-    zhihu: # your ZhiHu URL
-    twitter: # your twitter URL
-    email: # your email
+    github: https://github.com/awairo
+    # instagram: # your Instagram URL
+    # zhihu: # your ZhiHu URL
+    # twitter: # your twitter URL
+    email: 375364180@qq.com
     # ...... # you can add more
 
 # ---------------------------------------------------------------------------------------
@@ -128,7 +128,7 @@ post:
 
   # Author label
   author_label:
-    enable: true
+    enable: false
     auto: false # if true, show Lv1, Lv2, Lv3... , If false, show custom label
     # label array item can be one or more
     custom_label_list: ["lol"]
@@ -190,8 +190,8 @@ local_search:
 # Comment plugin
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: false
-  use: waline # values: waline | gitalk | twikoo
+  enable: true
+  use: gitalk # values: waline | gitalk | twikoo
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
@@ -202,10 +202,10 @@ comment:
   # Gitalk
   # See: https://github.com/gitalk/gitalk
   gitalk:
-    github_id: # GitHub repo owner
-    repository: # Repository name to store issues
-    client_id: # GitHub Application Client ID
-    client_secret: # GitHub Application Client Secret
+    github_id: awairo
+    repository: https://github.com/awairo/blog-comment
+    client_id: cd9278bc2caf6277e19c
+    client_secret: 283008ecf67ef4d2c34df464abb33af2af36e3c8
 
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
@@ -226,7 +226,7 @@ friend_links:
 # See: https://github.com/hexojs/hexo-generator-feed
 # ---------------------------------------------------------------------------------------
 rss:
-  enable: false
+  enable: true
 
 # ---------------------------------------------------------------------------------------
 # Lazyload image
@@ -284,13 +284,19 @@ footer:
 inject:
   enable: true
   head: # inject code into <head> tag
-    - <link rel="stylesheet" href="/custom/css/style.css">
-    - <link rel="stylesheet" href="/custom/css/waves.css">
+    - <link rel="stylesheet" href="/css/custom.css">
   footer: # inject code into <footer> tag
-    - <script src="/custom/js/waves.js"></script>
+    - <script src="/js/custom.js"></script>
 # ---------------------------------------------------------------------------------------
 # Redefine Theme version (Please dont modify it)
 # Please go to github to update the latest version frequently
 # Github: https://github.com/EvanNotFound/hexo-theme-redefine
 # ---------------------------------------------------------------------------------------
 version: 1.1.2
+
+# Feed Atom
+# npm install hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
