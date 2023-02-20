@@ -45,12 +45,12 @@ style:
   first_screen:
     enable: true
     background_image:
-      light: https://evan.beee.top/img/wallhaven-wqery6-light.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
-      dark: https://evan.beee.top/img/wallhaven-wqery6-dark.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
+      light: /images/Bluewing_Wheat_field_by_Sam_Kieth_Ghibli_Loud_Colors_perspectiv_f49988e8-3bf1-461c-8243-6b3f3bf2552e.jpeg # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
+      dark: /images/Bluewing_Night_Wheat_field_by_Sam_Kieth_Ghibli_Loud_Colors_pers_126eaebd-03fb-4075-af57-8337b8df8983.jpeg # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
     title_color:
       light: "#fff" # first screen title color (light mode)
       dark: "#d1d1b6" # first screen title color (dark mode)
-    description: 孤舟蓑笠翁，独钓寒江雪。 # the title in the middle of the first screen. HTML supported (e.g. svg html code of your logo)
+    description: 』今天的风儿甚是喧嚣『 # the title in the middle of the first screen. HTML supported (e.g. svg html code of your logo)
     custom_font: # custom font for the first screen
       enable: false
       font_family: # the font family name of the url below
@@ -191,7 +191,9 @@ local_search:
 # ---------------------------------------------------------------------------------------
 comment:
   enable: true
-  use: gitalk # values: waline | gitalk | twikoo
+  use: utterances
+
+  utterances:
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
@@ -202,10 +204,10 @@ comment:
   # Gitalk
   # See: https://github.com/gitalk/gitalk
   gitalk:
-    github_id: awairo
-    repository: blog-comment
-    client_id: cd9278bc2caf6277e19c
-    client_secret: cb45b5c0519904f50e5237b28711189e318fafb4
+    github_id:
+    repository:
+    client_id:
+    client_secret:
 
   # Twikoo
   # See: https://github.com/imaegoo/twikoo

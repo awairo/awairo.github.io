@@ -1,3 +1,7 @@
+.light-mode .dark-mode {
+  --first-screen-text-color: rgba(255, 242, 222, 0.888);
+}
+
 /* 滚动条 */
 body {
   overflow-y: overlay;
