@@ -1,4 +1,5 @@
-.light-mode .dark-mode {
+.light-mode,
+.dark-mode {
   --first-screen-text-color: rgba(255, 242, 222, 0.888);
 }
 
@@ -20,6 +21,11 @@ body {
 .footer {
   background-image: url("../images/nnnoise4.svg") !important;
   background-repeat: initial;
+}
+
+/* about info */
+.content > .info {
+  padding: 8px 10px !important;
 }
 
 /* Waves */
