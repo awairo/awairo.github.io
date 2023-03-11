@@ -52,6 +52,9 @@
     end
     初始化-->准备数据-->渲染图形-->像素缓冲区</pre>
 ]]></content>
+      <tags>
+        <tag>opengl</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello</title>
