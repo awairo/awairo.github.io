@@ -6,7 +6,7 @@
   <link href="https://awairo.github.io/atom.xml" rel="self"/>
   
   <link href="https://awairo.github.io/"/>
-  <updated>2023-03-11T09:11:14.044Z</updated>
+  <updated>2023-03-11T13:14:20.424Z</updated>
   <id>https://awairo.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://awairo.github.io/posts/5cd38c2c.html"/>
     <id>https://awairo.github.io/posts/5cd38c2c.html</id>
     <published>2023-02-22T05:07:30.000Z</published>
-    <updated>2023-03-11T09:11:14.044Z</updated>
+    <updated>2023-03-11T13:14:20.424Z</updated>
     
     <content type="html"><![CDATA[<h2 id="屏幕上显示的图像"><a href="#屏幕上显示的图像" class="headerlink" title="屏幕上显示的图像"></a>屏幕上显示的图像</h2><pre class="mermaid">flowchart LR    CPU执行代码 <-->|读写| 像素缓冲区-->屏幕显示</pre><ol><li>这里列举 4k 显示器来说（4k 真赞）</li><li>刷新一次全屏需要 CPU 计算 <code>4096*2160=8847360</code> 800 多万个像素点。再加上 60Hz 刷新率<code>8847360*60=530851600</code>，每秒 5 亿多个像素了。</li><li>因为系统上有很多任务需要 CPU 执行，忙不过来就会卡顿，为了缓解 CPU 的压力，加入了<a class="link"   href="https://zh.wikipedia.org/wiki/%E5%9C%96%E5%BD%A2%E8%99%95%E7%90%86%E5%99%A8" >图形处理器（GPU) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</li></ol><pre class="mermaid">flowchart LR    CPU执行代码 <-->|指令|GPU-->屏幕显示</pre><ol start="4"><li>这时 CPU 只用吩咐 GPU 干活，美滋滋。</li></ol><h2 id="驱动-GPU-工作"><a href="#驱动-GPU-工作" class="headerlink" title="驱动 GPU 工作"></a>驱动 GPU 工作</h2><pre class="mermaid">flowchart LR    CPU-->图形库-->驱动程序-->GPU</pre><p>我们一般使用一种图形库来工作，常见的如下：</p><ul><li><a class="link"   href="https://zh.wikipedia.org/wiki/OpenGL" >OpenGL <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 多平台支持<ul><li><a class="link"   href="https://zh.wikipedia.org/wiki/OpenGL_ES" >OpenGL ES <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> (由上精简出来的移动端版本)<ul><li><a class="link"   href="https://zh.wikipedia.org/wiki/WebGL" >WebGL <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> (由上精简出来的网页版本)</li></ul></li></ul></li><li><a class="link"   href="https://zh.wikipedia.org/wiki/DirectX" >DirectX <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> Windows 专有</li><li><a class="link"   href="https://zh.wikipedia.org/wiki/Metal_(API)" >Metal <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> macOS 专有</li><li><a class="link"   href="https://zh.wikipedia.org/wiki/Vulkan" >Vulkan <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 未来接替 OpenGL&amp;ES</li><li><a class="link"   href="https://zh.wikipedia.org/wiki/WebGPU" >WebGPU <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 未来接替 WebGL</li></ul><h2 id="使用-OpenGL"><a href="#使用-OpenGL" class="headerlink" title="使用 OpenGL"></a>使用 OpenGL</h2><p>推荐学习读物：</p><blockquote><p><a class="link"   href="https://learnopengl-cn.github.io/" >learnopengl-cn <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p></blockquote><p>最基础的工作过程如下：</p><pre class="mermaid">flowchart LR    subgraph 准备数据        绑定并提交数据到缓冲区-->        链接Shader-->        链接顶点属性    end    subgraph 渲染图形        顶点着色-->        几何着色-->        片元着色    end    初始化-->准备数据-->渲染图形-->像素缓冲区</pre>]]></content>
     
